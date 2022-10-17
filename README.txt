@@ -61,4 +61,16 @@ Selected Razor runtime.. will this aactually work ! let us test this and see... 
     return View();
 }
 
--Add the New File Inside View Folder... 
+-Add the New Folder Inside Views and name it as "HelloWorld"
+
+- Added the File As Index.cshtml
+- Add the code inside the file
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>Hello from our View Template!</p>
+
+- Let us run the code and see the output......
