@@ -98,3 +98,14 @@ Selected Razor runtime.. will this aactually work ! let us test this and see... 
  - Added the "Cup.cs" Class Inside Models Folder..
 
  - Added the Datatype Field in this Class of Cup.cs
+
+ -- Install the New Package 
+ Install-Package Microsoft.EntityFrameworkCore.SqlServer 
+ and run 
+
+ -Added the New Class MvcCupContext.cs Inside Data Folder.....
+
+ Done Changes in Startup.cs
+
+ - Done Changes in appsetting.json File ... 
+ - Lets Us Run the File 
