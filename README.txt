@@ -40,3 +40,23 @@ Selected Razor runtime.. will this aactually work ! let us test this and see... 
 
   - .. Added new code in HelloWorldController.cs 
     .. added new 2 parameters in the line of code name and numTimes (Count) .. this code shows the number of count of browser refresh.
+
+
+    - I replaced the parameter  from numTimes to ID
+ public string Welcome(string name, int ID = 1)...
+ and run the Code..
+ Added this paramter in link .. http://localhost:46966/HelloWorld/Welcome?name=Samir&ID=14
+ and got the output as ..Hello Samir, ID: 14..
+
+
+ .......//////************. Part 3... To Add the View to ASP>NET MVC app... *********/////////////
+
+ - Create a new Folder inside Views Folder.. and give the name as "HelloWorld"..
+ - Cretae a new File insde.. View/HelloWorld Folder and select as RazorView Empty and give the name as "Index.cshtml" 
+
+ - Before creating the View Replace the Code in HelloWorldController.cs file 
+
+ public IActionResult Index()
+{
+    return View();
+}
