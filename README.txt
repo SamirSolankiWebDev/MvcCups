@@ -94,3 +94,7 @@ Selected Razor runtime.. will this aactually work ! let us test this and see... 
 
 
  ......///************ Part 4... To Add a Modelto an ASP>NET MVC app... **********///////
+
+ - Added the "Cup.cs" Class Inside Models Folder..
+
+ - Added the Datatype Field in this Class of Cup.cs
