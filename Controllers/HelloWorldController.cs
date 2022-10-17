@@ -17,10 +17,10 @@ namespace MvcCups.Controllers
         // 
         // GET: /HelloWorld/
 
-       /* public string Index()
-        {
-            return "This is my default action...";
-        }*/
+        /* public string Index()
+         {
+             return "This is my default action...";
+         }*/
 
         // 
         // GET: /HelloWorld/Welcome/ 
@@ -29,9 +29,17 @@ namespace MvcCups.Controllers
          {
              return "This is the Welcome action method...";
          }*/
-        public string Welcome(string name, int numTimes = 1)
+        /*  public string Welcome(string name, int numTimes = 1)
+          {
+              return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
+          }*/
+
+        public IActionResult Welcome(string name, int numTimes = 1)
         {
-            return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
+            ViewData["Message"] = "Hello " + name;
+            ViewData["NumTimes"] = numTimes;
+
+            return View();
         }
     }
 }
