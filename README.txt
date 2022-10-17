@@ -88,4 +88,9 @@ Selected Razor runtime.. will this aactually work ! let us test this and see... 
 
  -- Added the new file "Welcome.cshtml" inside View/HelloWorld/Welcome.cshtml
 
- -Let us Run the Code
+ -Let us Run the Code and run this link http://localhost:46966/HelloWorld/Welcome?name=Samir&numtimes=5
+
+  After done this step commit the code and Go to next step to part 4.....
+
+
+ ......///************ Part 4... To Add a Modelto an ASP>NET MVC app... **********///////
