@@ -15,4 +15,5 @@ Selected Razor runtime.. will this aactually work ! let us test this and see... 
  After done the comment on // "sslPort":44389 // this Line the code started running. I got the Welcome Screen on browser This link is 
  http://localhost:34699/
 
+ All done 
  
