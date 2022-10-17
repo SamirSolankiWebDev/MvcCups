@@ -109,3 +109,11 @@ Selected Razor runtime.. will this aactually work ! let us test this and see... 
 
  - Done Changes in appsetting.json File ... 
  - Lets Us Run the File 
+
+ -Every Time while running the ""Add-Migration InitialCreate"" I use to get ERROT Saying no DB found 
+ or i used to get more then one DB found
+
+ - I RUN this following code 
+ dotnet ef migrations add InitConfigration -c ConfigurationDbContext -o Data/Migrations/IdentityServer/Configuration
+
+ It started Running, It Worked for me and Migration tooked place.
