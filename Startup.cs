@@ -28,14 +28,18 @@ namespace MvcCups
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllersWithViews();
+            
 
-            services.AddDbContext<MvcCupContext>(options =>
+            services.AddDbContext<MvcCupsContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("MvcCupContext")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                    Configuration.GetConnectionString("MvcCupsContext")));
+            /*services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<ApplicationDbContext>();*/
+            services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddDbContext<MvcCupsContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MvcCupsContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
