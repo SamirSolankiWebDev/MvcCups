@@ -20,3 +20,23 @@ Selected Razor runtime.. will this aactually work ! let us test this and see... 
   1121: Kept the application running ... testing Razor compile...
  change some content..... index.cshtml - from "Welcome" to "Hello World"........
  VS19 didnt seem to push ... but refereshed the browser and new context displayed
+
+ ...../////////************ Part 2 .. Doing new chnages as per the part 2 documents.. ********///////////
+
+ - Adding new controller 
+ - Right click on "Controller" folder and add the new controller Given name "HelloWorldController.cs"
+ - Now you can find the new controller "HelloWorldController.cs" inside "Controllers" Folder
+
+ - In HelloWorldController I have added the new code ad per the documents..
+ - Inside public class... added public string Index and return .."This is my default action..."
+
+ - Added new Method Welcome... 
+ and added return "This is the Welcome action method..."
+
+ - After running the code and calling the link http://localhost:34699/HelloWorld
+  It didnt worked ...
+  - Because i have not added the "using System.Text.Encodings.Web;" include in my "HelloWorldController.cs"....
+  - After adding this code It worked and gave me output... "This is my default action..."
+
+  - .. Added new code in HelloWorldController.cs 
+    .. added new 2 parameters in the line of code name and numTimes (Count) .. this code shows the number of count of browser refresh.
